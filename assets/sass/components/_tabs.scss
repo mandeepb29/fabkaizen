@@ -1,0 +1,30 @@
+.tabs{
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        overflow-x: scroll;
+  
+        &::-webkit-scrollbar {
+          height: 0;
+          width: 0;
+        }
+
+        li {
+            a {
+                font-weight: 400;
+             
+              display: block;
+              font-family: Manrope;
+              @include medium-fs;
+              text-decoration: none;
+              white-space: nowrap;
+            }
+            &.ui-tabs-active a {
+                font-weight: 600;
+          }
+        }
+    }
+
+    
+}

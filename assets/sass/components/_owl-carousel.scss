@@ -1,0 +1,47 @@
+.owl-carousel-topright .owl-nav {
+    display: flex;
+    gap: 4rem;
+    justify-content: end;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.owl-carousel-industry .owl-nav,
+.owl-carousel-industry-inner .owl-nav,
+.owl-carousel-testimonial .owl-nav,
+.owl-carousel-services .owl-nav,
+.owl-carousel-videos .owl-nav {
+    position: absolute;
+    left: 50%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.owl-carousel-testimonial .owl-nav,
+.owl-carousel-services .owl-nav {
+    padding: 0 4vw;
+
+}
+
+.owl-carousel {
+    .owl-dots {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.6rem;
+
+        button.owl-dot {
+            @include circle(1.2rem);
+            background: $border-grey;
+
+            &.active {
+                background: $secondary-dark;
+            }
+        }
+    }
+}

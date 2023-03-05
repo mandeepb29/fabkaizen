@@ -1,0 +1,64 @@
+.role{
+    &-card{
+        margin-bottom: 4rem;
+        padding: 1rem;
+        &-top{
+            border-bottom: 0.8px solid rgba($border-grey,0.3);
+            padding-bottom: 0.2rem;
+        }
+        &-bottom{
+            padding: 0.4rem 0;
+            border-bottom: 1px solid $color-white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-white{
+            .role-card-top{
+                border-color: $border-grey;
+            }
+            .role-card-bottom{
+                border-color: $text-dark;
+            }
+        }
+    }
+    &-info{
+        margin-top: 2.5rem;
+       p,h6  {
+            margin-bottom: 0;
+            letter-spacing: 0.1rem
+        }
+        p{
+            font-weight: 400;
+            font-size:1.6rem;
+        }
+        &-item{
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+        justify-content: space-between;
+
+        h6{
+            font-weight: 900;
+        }
+        }
+    }
+
+    &-price{
+        .old{
+            text-decoration:line-through;
+            margin-bottom: 0;
+        }
+        .new {
+            font-size: 2.8rem;
+            margin-top: -0.6rem;
+            color: $secondary-light;
+            margin-bottom: 0;font-weight: 600;
+        }
+    }
+    &-action-buttons{
+        display: flex;
+        gap: 1rem;
+    }
+}

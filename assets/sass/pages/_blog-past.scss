@@ -1,0 +1,118 @@
+.hero-blog-post-section{
+    
+    padding-bottom: 4rem;
+    position: relative;
+
+    &::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(55.89% 81.3% at 81.06% 23.63%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.44) 46.35%, #F8F8F8 100%);
+      z-index: 1;
+
+      @include res(sm){
+        background-image: radial-gradient(86.37% 138.67% at 94.16% 88.85%, rgba(255, 255, 255, 0.69) 0%, rgba(255, 255, 255, 0.81) 46.35%, #F8F8F8 100%);
+      }
+    }
+  .container * {
+    position: relative;
+    z-index: 2;
+  }
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../../assets/img/blog-top-abs.svg);
+        width: 10rem;
+    height: 36rem;
+    background-size: 100% 100%;
+    background-position: top left;
+    top: 0;
+    left: 0;
+    z-index: 20;
+
+    @include res(sm){
+      right: 0;
+      bottom: 0;
+      top: auto;
+      left: auto;
+      transform: rotateY(180deg);
+    }
+      }
+
+      h2{
+        padding-bottom: 2rem;
+        border-bottom: 2px solid $secondary-light;
+    }
+
+    .blog-hero-img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: top center;
+      z-index: 0;
+    }
+      
+    .hero-blog-post-section-content{
+        padding-top: 10rem;
+
+        .blog-post-img{
+            padding-top: 5rem;
+            display: flex;
+            align-items: flex-end;
+
+            &::before {
+                content: "";
+                position: absolute;
+                background-image: url(../../img/icons/blog-post.svg);
+                height: 9rem;
+                width: 9rem;
+                background-size: cover;
+                top: 38rem;
+                right: 130rem;
+                opacity: 90%;
+              }
+            
+          img{
+            @include circle(6rem);
+            margin-right: 1.2rem;
+            }
+        }
+     }
+  }
+
+  .grey-card{
+    padding: 2.4rem 3.2rem;
+    margin-bottom: 3rem;
+    .service-type{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 2rem;
+
+    .service-type-logo{
+            border: 2px solid $primary-color-light;
+            @include circle(5rem);
+            @include flex-center;
+            align-items: center;
+
+        .service-type-img{
+            width: 65%;
+        }
+    }
+  }
+
+  a {
+    color: $primary-blue-dark;
+    &:hover{
+      color: $secondary-dark;
+    }
+  }
+  
+  
+}

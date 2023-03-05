@@ -1,0 +1,229 @@
+.hero-about-section {
+  background-image: url(../../assets/img/aboutus-bg.jpg);
+  background-position: top;
+}
+
+.hero-about-section-top {
+  padding-bottom: 12rem;
+}
+
+.hero-about-section-content {
+  h4 {
+    padding-bottom: 0.8rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid $secondary-light;
+  }
+  p {
+    padding-top: 1.4rem;
+  }
+}
+
+.team-section {
+  .team-card {
+    margin-bottom: 3rem;
+    border: 1px solid $text-grey;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../../assets/img/icons/union.svg);
+      height: 15rem;
+      width: 15rem;
+      background-size: cover;
+      top: -4rem;
+      right: -4rem;
+      opacity: 90%;
+    }
+  }
+}
+
+.team-card-top {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 2rem 2rem;
+
+  .team-card-image {
+    width: 12rem;
+  }
+
+  .team-card-right {
+    flex-basis: 1;
+    .social-icon {
+      width: 2.4rem;
+      height: auto;
+      margin-top: 1.8rem;
+      margin-right: 2rem;
+    }
+  }
+}
+
+.team-card-content {
+  padding: 0rem 2rem;
+
+  p {
+    line-height: 1.8;
+  }
+}
+
+.team-button-action {
+  text-align: end;
+  padding: 3rem 3rem;
+}
+
+.why-choose-us-box {
+  background-image: url(../../assets/img/wcu-bg.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: bottom left;
+  padding: 6rem 6rem 4rem 6rem;
+
+  // h2 {
+  //   padding-top: 3rem;
+  //   padding-bottom: 3rem;
+  // }
+  @include res(sm){
+    padding: 5rem 3rem 4rem 3rem;
+  }
+  .why-choose-us-card {
+    padding-bottom: 3rem;
+    width: 90%;
+
+    @include res(sm){
+      width: 100%
+    }
+
+    .wcu-option {
+      @include circle(10rem);
+      @include flex-center;
+      padding: 1rem;
+      border: 1.5px solid $secondary-light;
+      margin-bottom: 2rem;
+    }
+
+    .wcu-image {
+      width: 75%;
+      filter: invert(1);
+    }
+  }
+}
+
+.staff-section {
+  // h2{
+  //   margin-top: -0.8rem;
+  //   padding-top: 2rem;
+  //   padding-left: 5rem;
+  //   border-top: 2px solid $text-grey;
+
+  //   h2:not(:first-child){
+  //     border-top: none;
+  //     padding-left: 0rem;
+  //   }
+  // }
+
+  .staff-big-tile {
+    position: relative;
+    padding: 7rem 9rem;
+    background-image: url(../../assets/img/staff.jpg);
+    background-size: cover;
+    width: 100%;
+    outline: 5px solid $secondary-light;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 16rem;
+
+    @include res(lg){
+      padding: 7rem 5rem;
+    }
+
+    @include res(md){
+      padding: 4rem 1rem;
+      outline: none;
+      text-align: center;
+      border: 0.5rem solid $secondary-light;
+    }
+  }
+}
+
+.staff-right {
+  padding: 2rem 0;
+}
+
+.staff-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(15rem, 1fr));
+  gap: 2.8rem;
+  margin-top: 1.6rem;
+}
+
+.staff-block {
+  padding: 2rem 0 2rem 3rem;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $text-grey;
+  }
+}
+
+.staff-box {
+  padding-bottom: 2.5rem;
+
+  h1 {
+    margin-bottom: 1rem;
+    line-height: 1;
+  }
+}
+
+.journey-tabs{
+  ul {
+    gap: 12rem;
+    li {
+      position: relative;
+      a{
+        padding: 1.2rem 3.2rem;
+        background-color: $grey-bg;
+        color: $text-dark;
+      }
+
+      &.ui-tabs-active a {
+        font-weight: 700;
+        background-color: $secondary-light;
+      }
+ 
+      &:not(:last-child){
+        &::before{
+          position: absolute;
+          content: "";
+          height: 1px;
+          width: 12rem;
+          right: 0;
+          top: 50%;
+          background-color: $secondary-dark;
+          transform: translate(100%,-50%);
+        }
+        &::after{
+          position: absolute;
+          content: "";
+         @include circle(1rem);
+          right: -6rem;
+          top: 50%;
+          background-color: $secondary-dark;
+          transform: translate(50%,-50%);
+        }
+      }
+    
+    } 
+
+  
+  } 
+
+  .content{
+    padding-top: 3rem;
+
+    p{
+      margin-top: 3rem;
+      color: $text-dark;
+    }
+  }
+}

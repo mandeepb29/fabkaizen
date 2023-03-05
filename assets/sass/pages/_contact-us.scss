@@ -1,0 +1,96 @@
+.hero-contact-section {
+  background-image: url(../../assets/img/contact-bg.jpg);
+
+  background-position: left 22%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  @include res(md){
+    background-position: 0 6rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero-contact-section-top {
+  padding-bottom: 2.5rem;
+  border-bottom: 2px solid $secondary-light ;
+  margin-bottom: 4rem;
+
+  h4 {
+    color: #AEAEAE;
+  }
+}
+
+.contact-us {
+
+  .contact-card {
+    padding: 4rem 3rem;
+  }
+
+  .contact-column {
+    @include res(md) {
+      margin-top: 4rem;
+    }
+  }
+
+  .contact-address {
+    width: 100%;
+    margin-left: 1rem;
+    padding: 2rem;
+
+    @include res(md){
+      padding: 2rem 0;
+    }
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 1px solid $border-grey-light;
+
+    .address-logo {
+      @include circle(8rem);
+      border: 1.2px solid $text-grey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .contact-logo {
+        width: 4rem;
+      }
+    }
+
+    .address-info {
+      margin-left: 2rem;
+    }
+  }
+}
+
+
+.useful-links{
+  margin-top: 7.2rem;
+  position: relative;
+
+  &-row{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/img/icons/Group-244.svg);
+    height: 12rem;
+    width: 12rem;
+    background-size: contain;
+    top: 0.4rem;
+    left: 0.4rem;
+    transform: translateY(-50%);
+
+    @include res(sm){
+      left: auto;
+    right: 1rem;
+    transform: rotate(90deg) translateX(-56%);
+    }
+}
+}

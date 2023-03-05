@@ -1,0 +1,45 @@
+.number-block{
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    background-color: $grey-dark;
+    width: 100%;
+    &-number{
+        min-height: 10rem;
+        width: 10rem;
+        min-width: 10rem;
+        align-self: stretch;
+        box-shadow: -3px 0px 0px 0px $secondary-light, -
+        3px -3px 0px 0px $secondary-light,
+        -3px 3px 0px 0px $secondary-light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        h1{
+            color: $secondary-light;
+            font-weight: 300;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+        &:before{
+            content: "";
+           @include square(45%);
+            background-image: url(../../assets/img/icons/triangle.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            position: absolute;
+            bottom: 0.4rem;
+            left: 0.4rem;
+        }
+
+    }
+    &-text{
+        padding:1rem;
+        p{
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,209 @@
+.top-section-index {
+  background-image: url(../../assets/img/hero-section-bg.jpg);
+
+  @include res(sm){
+    background-image: url(../../assets/img/hero-section-bg-mobile.jpg);
+    background-position: top center;
+  }
+}
+
+.head-top {
+  h1 {
+    font-weight: 600;
+    max-width: 40rem;
+  }
+}
+
+.testimonial {
+  &-herosection {
+    border-top: 1px solid $secondary-light;
+    padding-top: 3rem;
+    margin-top: 3rem;
+  }
+  &-block {
+    display: flex;
+
+    h4,p{
+      width: 75%;
+    }
+
+    .p-quote{
+      width: 100%;
+    }
+  }
+
+  &-img {
+    margin-right: 2rem;
+    @include circle(6rem);
+  }
+
+}
+.clients-section{
+  .col-6{
+    @include flex-center;
+  }
+}
+.client-image {
+  height: 4rem;
+  width: 12rem;
+  margin-bottom: 5rem;
+  
+}
+
+.tile-section{
+  .row .col-sm-6{
+    display: flex;
+  }
+}
+.big-tile {
+  position: relative;
+  padding: 7rem 9rem;
+  border: 5px solid $secondary-light;
+  background-image: url(../../assets/img/Rectangle-57.jpg);
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 16rem;
+  // .top-left {
+  //     position: absolute;
+  //     line-height: 2.5rem !important;
+  //     top: 25%;
+  //     left: 50%;
+  //     transform: translate(-50%, -50%);
+  // }
+
+  
+
+  h1 {
+    font-weight: 800;
+    line-height: 1;
+    line-height: 1.1;
+    letter-spacing: -0.2rem;
+
+  
+  }
+  @include res(md){
+    text-align:center;
+    padding-bottom: 9rem;
+    background-position: center center;
+  }
+
+  @include res(xs){
+    display: none;
+  }
+}
+
+.small-tile{
+  padding: 12rem 2rem 2rem;
+  border:1px solid $text-grey;
+  background-size: cover;
+  text-align: end;
+  width: 100%;
+  &-number{
+    color: $color-white;
+    margin-bottom: 1.6rem;
+  }
+
+  &-number,p{
+    margin-left: auto;
+    max-width: 20rem;
+    @include res(sm){
+      max-width: 80%;
+    }
+  }
+
+  &-1{
+    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-68.jpg);
+  }
+
+  &-2{
+    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-69.jpg);
+  } 
+
+  &-3{
+    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-73.jpg);
+  }
+
+  &-4{
+    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-71.jpg);
+  }
+}
+
+
+.services {
+  &-section {
+    padding-top: 0;
+  }
+  &-bg {
+    img {
+      min-height: 72rem;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      width: 100%;
+      transform: translateX(-2rem);
+
+      @include res(lg){
+        display: none;
+      }
+    }
+  }
+
+  &-content {
+    padding: 4rem 0 6rem;
+    @include res(lg){
+      padding: 0;
+    }
+  }
+
+  &-grid {
+    margin: 2rem 0;
+  }
+
+  &-tabs {
+    margin-top: 4rem;
+    margin-right: 6.5vw;
+
+    @include res(lg){
+      margin-right: 0;
+    }
+    ul {
+      justify-content: space-between;
+      border-bottom: 1px solid $color-white;
+
+      li {
+        a {
+          padding: 1.2rem 2.2rem;
+          color: $text-grey;
+          &:hover {
+            color: $secondary-light;
+            background-color: $secondary-hover;
+          }
+        }
+        &.ui-tabs-active a {
+          color: $color-white;
+          background-color: $color-grey;
+        }
+      }
+    }
+  }
+}
+
+
+.client-profiles-section{
+  padding-left: 3vw;
+  @include res(sm){
+    padding-left:0;
+  }
+}
+// .contact-section-grid{
+ 
+// }
+.contact-section{
+  padding-left:6.5vw;
+  padding-right:3vw;
+
+  @include res(sm){
+    padding-left:0;
+    padding-right:0;
+  }
+  }

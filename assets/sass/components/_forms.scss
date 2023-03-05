@@ -1,0 +1,52 @@
+// .form-group{
+//     padding: 6rem 3rem;
+// }
+
+.form-label{
+    display: block;
+    font-family: Manrope;
+    font-size: 1.5rem;
+    padding: 2rem 0rem;
+    color: $text-grey;  
+    }
+ 
+    .form-input {
+    font-family: Manrope;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    width: 100%;
+    color: $color-white;
+    padding-bottom: 3px;
+    border-bottom: 1.5px solid rgba( $secondary-light,0.6);
+    transition: $transition-primary;
+    transform-origin: left;
+    &::-webkit-input-placeholder, 
+    &:-ms-input-placeholder,
+    &::placeholder {
+        color: lighten($text-grey,60%);
+      }
+    &:focus{
+        border-bottom: 1.5px solid $secondary-light;
+    }
+
+    &-dark{
+        color: $text-dark;
+    }
+
+   
+    }
+
+    .form-submit{
+    padding-top: 5rem;
+    text-align: center;
+    }
+    .form-group-white{
+        .form-input{
+            border-bottom: 1.5px solid rgba( $secondary-dark,0.7);
+            &:focus{
+                border-bottom: 1.5px solid $secondary-dark;
+            }
+        }
+    }

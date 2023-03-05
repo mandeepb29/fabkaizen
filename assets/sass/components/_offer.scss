@@ -1,0 +1,29 @@
+.offer {
+    margin-top: 10rem;
+  
+    .option {
+      width: 100%;
+      max-width: 18rem;
+
+      @include res(sm){
+        max-width: 100%;
+        margin-bottom: 2rem
+      }
+  
+      &-img {
+        @include circle(8rem);
+        @include flex-center;
+        border: 1.5px solid $secondary-light;
+        margin-bottom: 1.5rem;
+  
+        img {
+          width: 50%;
+          height: auto;
+        }
+      }
+
+      p{
+        margin-top: 1rem;
+      }
+    }
+  }

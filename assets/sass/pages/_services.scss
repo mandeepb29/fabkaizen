@@ -1,0 +1,57 @@
+.hero-services-section,  .hero-industries-section  {
+   
+    background-position: top;
+    min-height: 70rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../../assets/img/services-abs-top.svg);
+      width: 14rem;
+      height: 28rem;
+      background-size: contain;
+      bottom: 0;
+      left: 2px;
+      background-position: left bottom;
+      background-repeat: no-repeat;
+
+      @include res(lg){
+        top: 30rem;
+        bottom: auto;
+      }
+  }
+  }
+
+  .hero-services-section{
+    background-image: url(../../assets/img/services-bg.jpg);
+  }
+
+  .hero-industries-section {
+    background-image: url(../../assets/img/industries-bg.jpg);
+  }
+
+  .services-industries-list{
+    margin-top: -16rem;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../../assets/img/icons/Group-245.svg);
+      height: 12rem;
+      width: 12rem;
+      background-size: contain;
+      top: 0;
+      right: 3rem;
+      transform: translateY(-50%);
+  }
+  }
+  
+  .hero-services-section-content,.hero-industries-section-content {
+    position: relative;
+    
+    h1{
+        border-bottom: 2px solid $secondary-light;
+    }
+
+    
+  }

@@ -1,0 +1,98 @@
+button,.btn, a.btn{
+    padding: 1rem 2rem;
+    display: inline-block;
+    text-align: center;
+    background-color: $secondary-light;
+    color: $grey-dark;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Manrope !important;
+    border: none;
+    outline: none;
+    transition: $transition-primary;
+    transition-duration: 100ms;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    &:hover{
+        transform: translateY(-2px);
+    }
+    &:active{
+        transform: translateY(0);
+        
+    }
+
+    &-lg{
+        padding: 1.6rem 2.4rem;
+    font-size: 1.8rem;
+    }
+}
+
+.btn-icon, a.btn-icon{
+    @include circle(4rem);
+    @include flex-center;
+    padding:0;
+    position: relative;
+    svg,img{
+        height: 50%;
+        color: $color-white
+    }
+    &-outline{
+        border: 1.5px solid $color-white;
+        background-color: transparent;
+
+        &-dark{
+            border-color: $text-grey;
+            background-color: $color-white;
+            svg,img{
+                filter: brightness(50%);
+                
+            }
+        }
+    }
+
+    &-transparent{
+        background-color: transparent;
+
+        &:hover{
+            background-color: rgba($color-white,0.1);
+        }
+    }
+
+   
+
+    &:hover{
+        transform: translateY(-2px);
+        border-color: $secondary-light;
+    }
+    &:active{
+        transform: translateY(0);
+    }
+}
+
+
+.btn-white,a.btn-white{
+    background-color: $color-white;
+    color: $text-dark;
+    font-size: 1.5rem;
+}
+
+.btn-outline, a.btn-outline{
+    background-color: transparent;
+    color: $color-white;
+    border: 2px inset $color-white;
+    //margin-left: 2rem;
+    &:hover{
+        border-color: $secondary-light;
+        
+    }
+    &:active{
+        color: $secondary-light;
+    }
+}
+
+
+.btn-black, a.btn-black{
+    background-color: $text-dark;
+    color: $color-white;
+}

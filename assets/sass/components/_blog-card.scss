@@ -1,0 +1,146 @@
+.blog-card{
+    .blog-content{
+        background-color: $color-grey;
+    }
+
+    .blog-bottom{
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .blog-author{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        img{
+            @include circle(5rem);
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    &-lg{
+
+
+        @include res(md){
+            margin-bottom: 4rem;
+            
+        }
+        .blog-content{
+            padding: 2.4rem 3.2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        }
+
+
+    }
+
+    &-hori{
+
+        &:not(:last-child){
+            margin-bottom: 2rem;
+            display: block;
+        }
+        
+        .blog-img{
+            max-height: 22rem;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+
+            @include res(xs){
+                max-height: 100%;
+             }
+
+           img{
+            object-fit: cover;
+            width: 100%;
+            object-position: center;
+           }
+        }
+        .blog-content{
+            height: 100%;
+        }
+        .blog-author{
+            img{
+                @include circle(4rem);
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+
+        .tag{
+            padding: 0.2rem 1rem;
+        }
+        @include res(xs){
+           .blog-bottom{
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 3rem
+           }
+            
+        }
+    }
+
+    &-ver, &-hori{
+        .blog-author{
+            img{
+                @include circle(4rem);
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+        .tag{
+            padding: 0.2rem 1rem;
+        }
+
+        .blog-content{
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+       
+    }
+
+    &-ver{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+
+        .blog-img{
+            max-height: 25rem;overflow: hidden;
+        }
+    }
+
+    &-white{
+        h5,p{
+            color: $text-dark;
+        }
+      
+        .blog-content{
+            background-color: transparent;
+            padding-left: 0;
+            padding-right: 0;
+        }
+       
+        .blog-bottom{
+            align-items: flex-end;
+            p{
+                color: $text-dark;
+            }
+
+            .blog-author{
+                .text p{
+                    color: $text-grey;
+                }
+            }
+        }
+    }
+}
+

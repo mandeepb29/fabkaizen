@@ -1,0 +1,133 @@
+.footer {
+  padding:5rem 0rem;
+  border-top: 1px solid $border-grey-light;
+  background-color: $grey-dark;
+  &-top {
+    //align-items: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1.5px solid $secondary-light;
+  }
+
+  &-top-left {
+    .logo {
+      padding-bottom: 1rem;
+      width: 15rem;
+    }
+  }
+
+  &-top-right {
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    gap:4rem;
+
+    @include res(xs){
+      margin-top: 2rem;
+      justify-content: start;
+    }
+  }
+
+  &-bottom {
+    // display: flex;
+    // justify-content: space-between;
+    padding: 2rem 0rem;
+  }
+
+  &-link-left,
+  &-link-right {
+    .text-white {
+      padding-bottom: 1rem;
+    }
+
+    a {
+      display: block;
+      margin-bottom: 0.6rem;
+      &:hover{
+        color: $secondary-light;
+      }
+    }
+  }
+
+  &-link-left{
+    @include res(md){
+      margin-bottom: 3rem;
+    }
+    
+  }
+
+  &-link-right {
+    // h4,
+    // a {
+    //   text-align: right;
+    // }
+     }
+    
+    &-subscription{
+      padding: 3rem 0rem 0;
+    
+
+    .newsletter{
+      padding: 2.6rem 3rem;
+      background-color: $color-grey;
+
+      h4{
+        margin-bottom: 0.5rem;
+      }
+
+      // .box {
+      //   position: relative;
+      //   display: inline-block;
+      //   width: 200px;
+      
+      // }
+
+      
+    // .subscribe{
+    //   display: flex;
+    //   flex-direction: row-reverse;
+    // }
+    }
+  }
+
+  .follow-us{
+    text-align: end;
+
+    @include res(sm){
+      margin-top: 3rem;
+      text-align: start;
+    }
+    .social-icons{
+      display: flex;
+      margin-bottom: 4rem;
+      justify-content: end;
+
+      @include res(sm){
+        justify-content: start
+      }
+
+      a{
+        @include circle(4rem);
+        @include flex-center;
+        border: 1.5px solid $color-white;
+       
+        &:not(:first-child){
+          margin-left: 2rem;
+        }
+
+        svg{
+          width: 50%;
+          transition: $transition-primary;
+        }
+
+        &:hover{
+          background-color: $secondary-hover;
+          border-color: $secondary-light;
+          svg{
+            color: $secondary-light;
+          }
+          
+        }
+      }
+    }
+  }
+}

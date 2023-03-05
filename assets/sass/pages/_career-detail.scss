@@ -1,0 +1,53 @@
+.hero-career-detail-section {
+    background-image: radial-gradient(47.37% 93.08% at 81.06% 23.63%, rgba(255, 255, 255, 0.37) 0%, rgba(255, 255, 255, 0.44) 46.35%, #FCFCFC 100%),url(../../assets/img/career-detail.jpg);
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom: 1.8px solid $border-grey;
+
+    @include res(md){
+        background-image: radial-gradient(47.37% 93.08% at 81.06% 23.63%, rgba(255, 255, 255, 0.68) 0%, rgba(255, 255, 255, 0.785) 46.35%, #FCFCFC 100%),url(../../assets/img/career-detail.jpg);
+        background-size: cover;
+    }
+
+    .hero-career-detail-section-content {
+        margin-bottom: 10rem;
+
+        p {
+            font-size: 2.05rem;
+            color: #ADADAD;
+            padding-bottom: 0.5rem;
+        }
+    }
+}
+
+.job-detail-section {
+    padding: 3rem 0 2rem;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid $border-grey;
+    }
+
+    h4 {
+        margin-bottom: 3rem;
+    }
+
+    p {
+        color: $text-dark;
+        padding-bottom: 1rem;
+    }
+
+   
+}
+
+
+.apply {
+    display: flex;
+    justify-content: end;
+    margin-top: 8rem;
+}
+
+.job-post-bottom{
+    border-top: 1.8px solid $border-grey;
+    padding-top: 3rem;
+}

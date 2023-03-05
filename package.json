@@ -1,0 +1,20 @@
+{
+  "name": "fabcons-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.css -w",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "mandeepb29",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

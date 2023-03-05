@@ -1,0 +1,45 @@
+.client-profile{
+    &-box{
+        padding: 1.6rem 2rem;
+
+        &-bottom{
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            h6{
+                @include small-fs;
+           }
+        }
+    }
+
+    &-info{
+        text-align: end;
+        img{
+            width: 4rem;
+        }
+
+       
+    }
+
+    &-row{
+        &:not(:last-child){
+            border-bottom: 0.8px solid $border-grey-light;
+        }
+        @include res(sm){
+            border : none;
+        }
+    }
+
+    &-col{
+        &:not(:last-child){
+            border-right: 0.8px solid $border-grey-light;
+        }
+        @include res(xs){
+            border-right: none !important;
+            border-bottom: 0.8px solid $border-grey-light;
+        }
+    }
+    
+}

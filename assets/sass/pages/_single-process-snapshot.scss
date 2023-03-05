@@ -1,0 +1,88 @@
+.hero-process-detail{
+    background: url(../img/process-detail-bg.jpg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 14rem;
+
+    @include res(md){
+      background: url(../img/process-detail-bgmobile.jpg);
+      background-position: bottom center;
+      background-size: 100% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      p{
+        margin-top: 18rem;
+      }
+    }
+
+    h2{
+        padding-bottom: 2rem;
+        border-bottom: 2px solid $secondary-light;
+    }
+}
+
+.overview-section{
+    position: relative;
+    margin-top: -4rem;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(../img/process-detail-top.svg);
+        height: 10rem;
+        width: 10rem;
+        background-size: cover;
+        transform: translateY(-100%);
+        top:0;
+        left: 0;
+      }
+}
+
+.activity{
+    position: relative;
+
+    .serial-no{
+        display: flex;
+        align-items: baseline;
+        gap: 0.4rem;
+   }
+
+   @include res(md){
+    padding-top: 2rem;
+   }
+
+   .activity-right{
+    position: relative;
+
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(../img/icons/Group-288.svg);
+        height: 6rem;
+        width: 6rem;
+        background-size: contain;
+        bottom: 0;
+        right: 0;
+        transform: translate(10px, 10px);
+      }
+
+    .activity-right-img{
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    }
+   }
+
+   .process-row{
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 4rem;
+
+     .process-text-col{
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        border-bottom: 1px solid $primary-color-light;
+     }
+   }
+}
+

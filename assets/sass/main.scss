@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap");
+
+@import "../vendors/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheetsnpm
+@import "../vendors/bootstrap/scss/variables";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../vendors/bootstrap/scss/maps";
+@import "../vendors/bootstrap/scss/mixins";
+@import "../vendors/bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "../vendors/bootstrap/scss/utilities";
+@import "../vendors/bootstrap/scss/reboot";
+@import "../vendors/bootstrap/scss/type";
+@import "../vendors/bootstrap/scss/images";
+@import "../vendors/bootstrap/scss/containers";
+@import "../vendors/bootstrap/scss/grid";
+@import "../vendors/bootstrap/scss/dropdown";
+@import "../vendors/bootstrap/scss/modal";
+//@import "/../vendors/bootstrap/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../vendors/bootstrap/scss/utilities/api";
+
+//OUR SCSS
+@import "abstracts/var";
+@import "abstracts/mixins";
+
+@import "base/animations";
+@import "base/reset";
+@import "base/typography";
+@import "base/utils";
+
+@import "components/buttons";
+@import "components/card";
+@import "components/forms";
+@import "components/owl-carousel";
+@import "components/industry-carousel";
+@import "components/role-card";
+@import "components/client-profile-box";
+@import "components/testimonial";
+@import "components/software";
+@import "components/offer";
+@import "components/tabs";
+@import "components/gradient-img-card";
+@import "components/blog-card";
+@import "components/number-block";
+@import "components/video-tile";
+@import "components/modal";
+
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/pricing-section";
+@import "layouts/cta-section";
+@import "layouts/common-section";
+
+@import "pages/index";
+@import "pages/about-us";
+@import "pages/industries";
+@import "pages/services";
+@import "pages/contact-us";
+@import "pages/resources";
+@import "pages/career-detail";
+@import "pages/career";
+@import "pages/process-snapshot";
+@import "pages/blog-past";
+@import "pages/single-process-snapshot";
+@import "pages/blogs";

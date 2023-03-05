@@ -1,0 +1,77 @@
+.text-white{
+    color: $color-white;
+}
+
+.text-grey{
+    color: $text-grey;
+}
+
+.bg-grey{
+    background-color: $color-grey;
+}
+
+.bg-light-grey{
+    background-color: $grey-bg;
+}
+.bg-light-gr{
+    background: linear-gradient(276.93deg, #F7F7F7 2.21%, #EBEBEB 98.13%);
+}
+.bg-darker{
+    background-color: $grey-dark;
+}
+
+.text-color-light{
+    color: $primary-color-light;
+}
+
+.text-secondary-light{
+    color: $secondary-light;
+}
+
+.text-secondary-dark{
+    color: $secondary-dark;
+}
+
+.text-light-blue{
+    color: $primary-color-medium;
+}
+
+.text-dark-blue{
+    color: $primary-blue-dark;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-border-grey{
+    color: $border-grey;
+}
+
+.tag{
+    background-color: $secondary-light;
+    padding: 0.3rem 1rem;
+    font-weight: 700;
+    @include small-fs;
+    color: $text-dark;
+    font-family: Manrope;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 1rem;
+
+    &-lg{
+        @include base-fs;
+        font-weight: 800;
+        padding: 1.4rem 2rem;
+    }
+}
+
+.border-top-grey{
+    padding-top: 2rem;
+   border-bottom: 1px solid $text-grey;
+}
+
+.section-sm{
+    padding: 5rem 0;
+}
+
