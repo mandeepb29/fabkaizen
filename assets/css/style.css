@@ -6391,6 +6391,8 @@ button, .btn, a.btn {
   background-size: cover;
   background-position: bottom left;
   padding: 6rem 6rem 4rem 6rem; }
+  .why-choose-us-box-home {
+    background-image: url(../../assets/img/wcu-bg-home.jpg); }
   @media (max-width: 47.99em) {
     .why-choose-us-box {
       padding: 5rem 3rem 4rem 3rem; } }
