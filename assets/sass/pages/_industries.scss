@@ -4,7 +4,8 @@
  padding-bottom: 4rem;
   background-size: contain;
   position: relative;
-
+  min-height: auto;
+  border-bottom: 1.5px solid $border-grey;
   @include res(lg){
     background-size: auto 100%;
     background-position: bottom center;
@@ -24,9 +25,16 @@
     }
 }
 
+.service-activity-img {
+    max-height: 35rem;
+    object-position: center;
+    object-fit: cover;
+}
+
 .hero-service-detail{
   background-image:  radial-gradient(55.89% 81.3% at 81.06% 23.63%, rgba(249, 249, 249, 0.04) 0%, rgba(250, 250, 250, 0.44) 46.35%, #F8F8F8 100%),url(../../assets/img/services-top-bg.jpg);
-
+  background-size: cover;
+  background-position: top right;
   @include res(sm){
     background-image:  radial-gradient(67.55% 93.16% at 98.78% 100.69%, rgba(249, 249, 249, 0.75) 0%, rgba(250, 250, 250, 0.85) 46.35%, rgba(248, 248, 248, 0.9) 100%),url(../../assets/img/services-top-bg.jpg);
   }
@@ -34,6 +42,20 @@
     margin-bottom: 20rem;
     border-bottom: 3px solid $secondary-light;
 }
+}
+
+.service-accounting-bookkeeping{
+  background-image: radial-gradient(55.89% 81.3% at 81.06% 23.63%, rgba(249, 249, 249, 0.04) 0%, rgba(250, 250, 250, 0.44) 46.35%, #F8F8F8 100%),url(../../assets/img/services/Accounting-Bookkeeping.png);
+  @include res(sm){
+    background-image:  radial-gradient(67.55% 93.16% at 98.78% 100.69%, rgba(249, 249, 249, 0.75) 0%, rgba(250, 250, 250, 0.85) 46.35%, rgba(248, 248, 248, 0.9) 100%),url(../../assets/img/services/Accounting-Bookkeeping.png);
+  }
+}
+
+.service-tax-filing{
+  background-image: radial-gradient(55.89% 81.3% at 81.06% 23.63%, rgba(249, 249, 249, 0.04) 0%, rgba(250, 250, 250, 0.44) 46.35%, #F8F8F8 100%),url(../../assets/img/services/tax-filling.jpg);
+  @include res(sm){
+    background-image:  radial-gradient(67.55% 93.16% at 98.78% 100.69%, rgba(249, 249, 249, 0.75) 0%, rgba(250, 250, 250, 0.85) 46.35%, rgba(248, 248, 248, 0.9) 100%),url(../../assets/img/services/tax-filling.jpg);
+  }
 }
 
 
