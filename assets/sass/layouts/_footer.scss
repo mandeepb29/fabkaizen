@@ -118,14 +118,18 @@
           width: 50%;
           transition: $transition-primary;
         }
-
+        img{
+            filter: brightness(0) invert(1);
+        }
         &:hover{
           background-color: $secondary-hover;
           border-color: $secondary-light;
           svg{
             color: $secondary-light;
           }
-          
+          img{
+            filter: none;
+        }
         }
       }
     }

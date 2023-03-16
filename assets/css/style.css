@@ -5930,11 +5930,15 @@ button, .btn, a.btn {
         .footer .follow-us .social-icons a svg {
           width: 50%;
           transition: all 0.25s ease-in-out; }
+        .footer .follow-us .social-icons a img {
+          filter: brightness(0) invert(1); }
         .footer .follow-us .social-icons a:hover {
           background-color: rgba(255, 230, 0, 0.1);
           border-color: #FFE600; }
           .footer .follow-us .social-icons a:hover svg {
             color: #FFE600; }
+          .footer .follow-us .social-icons a:hover img {
+            filter: none; }
 
 .pricing-section {
   position: relative; }
