@@ -13,8 +13,7 @@
     &-row {
      display: grid;
         grid-template-columns: repeat(auto-fit,minmax(23rem, 1fr));
-      border-top: 1px solid $border-grey-light;
-
+      border: 1px solid $border-grey-light;
       @include res(sm){
         grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
       }
@@ -23,7 +22,7 @@
     &-light-row{
       display: grid;
          grid-template-columns: repeat(auto-fit,minmax(23rem, 1fr));
-       border-top: 1px solid $secondary-light;
+       border: 1px solid $secondary-light;
  
        @include res(sm){
          grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));

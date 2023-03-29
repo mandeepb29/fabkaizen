@@ -5242,7 +5242,7 @@ button, .btn, a.btn {
 .software-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-  border-top: 1px solid rgba(142, 142, 142, 0.5); }
+  border: 1px solid rgba(142, 142, 142, 0.5); }
   @media (max-width: 47.99em) {
     .software-row {
       grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); } }
@@ -5250,7 +5250,7 @@ button, .btn, a.btn {
 .software-light-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-  border-top: 1px solid #FFE600; }
+  border: 1px solid #FFE600; }
   @media (max-width: 47.99em) {
     .software-light-row {
       grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); } }
@@ -6200,7 +6200,8 @@ button, .btn, a.btn {
 
 .head-top h1, .head-top .h1 {
   font-weight: 600;
-  max-width: 40rem; }
+  width: 100%;
+  max-width: 58rem; }
 
 .testimonial-herosection {
   border-top: 1px solid #FFE600;
