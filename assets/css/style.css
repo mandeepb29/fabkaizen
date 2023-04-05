@@ -6668,6 +6668,9 @@ button, .btn, a.btn {
 .hero-services-section, .hero-industries-section {
   background-position: top;
   min-height: 70rem; }
+  @media (max-width: 47.99em) {
+    .hero-services-section, .hero-industries-section {
+      min-height: 90rem; } }
   .hero-services-section::before, .hero-industries-section::before {
     content: "";
     position: absolute;
@@ -6691,7 +6694,7 @@ button, .btn, a.btn {
   background-image: url(../../assets/img/industries-bg.jpg); }
 
 .services-industries-list {
-  margin-top: -16rem;
+  margin-top: -40rem;
   position: relative; }
   .services-industries-list::before {
     content: "";

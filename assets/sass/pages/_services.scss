@@ -3,6 +3,9 @@
     background-position: top;
     min-height: 70rem;
 
+    @include res(sm){
+      min-height: 90rem;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -31,7 +34,7 @@
   }
 
   .services-industries-list{
-    margin-top: -16rem;
+    margin-top: -40rem;
     position: relative;
     &::before {
       content: "";
