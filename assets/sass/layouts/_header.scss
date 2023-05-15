@@ -32,10 +32,12 @@ $mobile-menu-width: 45rem;
   .nav-left,
   .nav-right {
     display: flex;
+    gap: 2rem;
     align-items: center;
   }
 
   .nav-menu {
+    
     margin-left: 2rem;
     display: flex;
     align-items: center;
@@ -121,6 +123,15 @@ $mobile-menu-width: 45rem;
       padding: 1.8rem;
       border-bottom: 1px solid $text-grey;
     }
+  }
+}
+
+.nav-menu-mobile-bottom{
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  @include res(sm){
+
   }
 }
 

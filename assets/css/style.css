@@ -4672,7 +4672,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
 
 h1, .h1 {
   font-size: 5.4rem;
-  line-height: 8rem;
+  line-height: 1.2;
   letter-spacing: -0.1rem;
   margin-bottom: 2rem; }
 
@@ -4996,6 +4996,34 @@ button, .btn, a.btn {
 .btn-black, a.btn-black {
   background-color: #000000;
   color: #FFFFFF; }
+
+.btn-whatsapp-fixed {
+  position: fixed !important;
+  transition: all 0.35s cubic-bezier(0.22, 0.68, 0, 1.71) !important;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex !important;
+  align-items: center !important;
+  color: #000000;
+  border-radius: 8rem;
+  padding: 1.2rem 3rem !important;
+  gap: 1rem; }
+  .btn-whatsapp-fixed img {
+    min-width: 2.6rem;
+    min-height: 2.6rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    filter: brightness(0); }
+  .btn-whatsapp-fixed h6, .btn-whatsapp-fixed .h6 {
+    margin: 0;
+    font-weight: 600;
+    color: #000000; }
+  .btn-whatsapp-fixed:hover {
+    background-color: #25D366 !important; }
+    .btn-whatsapp-fixed:hover img {
+      filter: brightness(0) invert(1); }
+    .btn-whatsapp-fixed:hover h6, .btn-whatsapp-fixed:hover .h6 {
+      color: #FFFFFF; }
 
 .form-label {
   display: block;
@@ -5642,6 +5670,7 @@ button, .btn, a.btn {
   .nav-header .nav-left,
   .nav-header .nav-right {
     display: flex;
+    gap: 2rem;
     align-items: center; }
   .nav-header .nav-menu {
     margin-left: 2rem;
@@ -5709,6 +5738,11 @@ button, .btn, a.btn {
       .nav-header .nav-link {
         padding: 1.8rem;
         border-bottom: 1px solid #8E8E8E; } }
+
+.nav-menu-mobile-bottom {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch; }
 
 .nav-dropdown-menu {
   padding: 6rem 0 0;
@@ -5865,7 +5899,7 @@ button, .btn, a.btn {
   top: 10px; }
 
 .footer {
-  padding: 5rem 0rem;
+  padding: 5rem 0rem 8rem;
   border-top: 1px solid rgba(142, 142, 142, 0.5);
   background-color: #25252D; }
   .footer-top {
@@ -5908,37 +5942,39 @@ button, .btn, a.btn {
       .footer .follow-us {
         margin-top: 3rem;
         text-align: start; } }
-    .footer .follow-us .social-icons {
-      display: flex;
-      margin-bottom: 4rem;
-      justify-content: end; }
-      @media (max-width: 47.99em) {
-        .footer .follow-us .social-icons {
-          justify-content: start; } }
-      .footer .follow-us .social-icons a {
-        min-width: 4rem;
-        min-height: 4rem;
-        width: 4rem;
-        height: 4rem;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1.5px solid #FFFFFF; }
-        .footer .follow-us .social-icons a:not(:first-child) {
-          margin-left: 2rem; }
-        .footer .follow-us .social-icons a svg {
-          width: 50%;
-          transition: all 0.25s ease-in-out; }
-        .footer .follow-us .social-icons a img {
-          filter: brightness(0) invert(1); }
-        .footer .follow-us .social-icons a:hover {
-          background-color: rgba(255, 230, 0, 0.1);
-          border-color: #FFE600; }
-          .footer .follow-us .social-icons a:hover svg {
-            color: #FFE600; }
-          .footer .follow-us .social-icons a:hover img {
-            filter: none; }
+
+.social-icons {
+  display: flex;
+  margin-bottom: 4rem;
+  justify-content: end; }
+  @media (max-width: 47.99em) {
+    .social-icons {
+      justify-content: start; } }
+  .social-icons a {
+    min-width: 4rem;
+    min-height: 4rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #FFFFFF; }
+    .social-icons a:not(:first-child) {
+      margin-left: 2rem; }
+    .social-icons a svg {
+      width: 50%;
+      transition: all 0.25s ease-in-out; }
+    .social-icons a img {
+      width: 50%;
+      filter: brightness(0) invert(1); }
+    .social-icons a:hover {
+      background-color: rgba(255, 230, 0, 0.1);
+      border-color: #FFE600; }
+      .social-icons a:hover svg {
+        color: #FFE600; }
+      .social-icons a:hover img {
+        filter: none; }
 
 .pricing-section {
   position: relative; }
